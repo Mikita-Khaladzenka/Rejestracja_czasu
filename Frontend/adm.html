@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Panel administratora</title>
+
+<link rel="stylesheet" href="adm.css">
+
+</head>
+
+
+<body>
+
+
+<div class="admin-container">
+
+
+<header>
+
+<h1>
+Panel administratora
+</h1>
+
+<p>
+Zarządzanie pracownikami
+</p>
+
+</header>
+
+
+
+<section id="login" class="login-page">
+
+    <div class="login-box">
+
+        <h2>
+        Panel administratora
+        </h2>
+
+        <p>
+        Podaj hasło administratora
+        </p>
+
+
+        <input
+            id="haslo"
+            type="password"
+            placeholder="Hasło">
+
+
+        <button onclick="login()">
+            Zaloguj
+        </button>
+
+
+    </div>
+
+</section>
+
+
+
+
+<section id="panel" style="display:none">
+
+
+
+<!-- ======================================
+     RAPORTY
+====================================== -->
+
+
+<div class="box report-box">
+
+
+<h2>
+Generowanie raportów
+</h2>
+
+
+
+<div class="formularz">
+
+
+
+<select id="typRaportu"
+onchange="zmianaTypuRaportu()">
+
+
+
+<option value="weekly">
+Raport tygodniowy
+</option>
+
+
+
+<option value="monthly">
+Raport miesięczny
+</option>
+
+
+
+</select>
+
+
+
+<select id="formatRaportu">
+
+
+<option value="excel">
+Excel
+</option>
+
+
+<option value="pdf">
+PDF
+</option>
+
+
+</select>
+
+
+
+<select id="rokRaportu">
+
+
+</select>
+
+
+
+<select id="miesiacRaportu">
+
+
+<option value="1">
+Styczeń
+</option>
+
+<option value="2">
+Luty
+</option>
+
+<option value="3">
+Marzec
+</option>
+
+<option value="4">
+Kwiecień
+</option>
+
+<option value="5">
+Maj
+</option>
+
+<option value="6">
+Czerwiec
+</option>
+
+<option value="7">
+Lipiec
+</option>
+
+<option value="8">
+Sierpień
+</option>
+
+<option value="9">
+Wrzesień
+</option>
+
+<option value="10">
+Październik
+</option>
+
+<option value="11">
+Listopad
+</option>
+
+<option value="12">
+Grudzień
+</option>
+
+
+</select>
+
+
+
+
+<select id="tydzienRaportu">
+
+
+</select>
+
+
+
+
+<button
+class="report-button"
+onclick="generujRaport()">
+
+Generuj raport
+
+</button>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<!-- ======================================
+     DODAWANIE PRACOWNIKA
+====================================== -->
+
+
+<div class="box">
+
+
+<h2>
+Dodaj pracownika
+</h2>
+
+
+
+<div class="formularz">
+
+
+
+<input 
+id="id"
+placeholder="ID">
+
+
+
+<input
+id="imie"
+placeholder="Imię">
+
+
+
+<input
+id="nazwisko"
+placeholder="Nazwisko">
+
+
+
+<input
+id="process"
+placeholder="Process">
+
+
+
+<button onclick="dodaj()">
+
+Dodaj
+
+</button>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<!-- ======================================
+     LISTA PRACOWNIKÓW
+====================================== -->
+
+
+<div class="box">
+
+
+<h2>
+Lista pracowników
+</h2>
+
+
+
+<table>
+
+
+<thead>
+
+
+<tr>
+
+
+<th>
+ID
+</th>
+
+
+<th>
+Imię
+</th>
+
+
+<th>
+Nazwisko
+</th>
+
+
+<th>
+Process
+</th>
+
+
+<th>
+Akcja
+</th>
+
+
+</tr>
+
+
+</thead>
+
+
+
+<tbody id="lista">
+
+
+</tbody>
+
+
+</table>
+
+
+
+</div>
+
+
+
+
+</section>
+
+
+</div>
+
+
+
+<script src="adm.js"></script>
+
+
+
+</body>
+
+
+</html>

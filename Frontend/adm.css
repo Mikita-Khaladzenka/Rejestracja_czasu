@@ -1,0 +1,591 @@
+* {
+
+    box-sizing: border-box;
+
+}
+
+
+
+body {
+
+
+    font-family: Arial, sans-serif;
+
+    background: #eef2f5;
+
+    margin: 0;
+
+    padding: 30px;
+
+
+}
+
+
+
+/* ==========================
+   GŁÓWNY KONTENER
+========================== */
+
+
+.admin-container {
+
+
+    max-width: 1100px;
+
+    margin: auto;
+
+
+}
+
+
+
+
+
+/* ==========================
+   HEADER
+========================== */
+
+
+header {
+
+
+    background: linear-gradient(
+        135deg,
+        #0078D7,
+        #005fa3
+    );
+
+
+    color:white;
+
+
+    padding:30px;
+
+
+    border-radius:14px;
+
+
+    margin-bottom:25px;
+
+
+    box-shadow:
+    0 8px 20px rgba(0,0,0,.15);
+
+
+}
+
+
+
+header h1 {
+
+
+    margin:0;
+
+    font-size:32px;
+
+
+}
+
+
+
+header p {
+
+
+    margin-top:10px;
+
+    opacity:.9;
+
+
+}
+
+
+
+
+
+/* ==========================
+   LOGOWANIE
+========================== */
+
+
+.login-page{
+
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:100vh;
+
+
+}
+
+
+
+.login-box{
+
+
+    width:420px;
+
+
+    background:white;
+
+
+    padding:45px;
+
+
+    border-radius:14px;
+
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.18);
+
+
+    text-align:center;
+
+
+}
+
+
+
+.login-box h2{
+
+
+    color:#0078D7;
+
+    margin-top:0;
+
+
+}
+
+
+
+
+
+/* ==========================
+   SEKCJE
+========================== */
+
+
+section {
+
+
+    background:white;
+
+
+    padding:25px;
+
+
+    border-radius:14px;
+
+
+    box-shadow:
+
+    0 5px 20px rgba(0,0,0,.12);
+
+
+}
+
+
+
+
+
+.box {
+
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+h2 {
+
+
+    color:#333;
+
+
+    border-bottom:
+
+    2px solid #ddd;
+
+
+    padding-bottom:10px;
+
+
+    margin-top:0;
+
+
+}
+
+
+
+
+
+/* ==========================
+   RAPORTY
+========================== */
+
+
+.report-box {
+
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #ffffff,
+        #f3f8ff
+    );
+
+
+    border-left:
+
+    6px solid #0078D7;
+
+
+}
+
+
+
+.report-box h2 {
+
+
+    color:#0078D7;
+
+
+}
+
+
+
+
+.report-box .formularz {
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    repeat(5,1fr);
+
+
+    gap:15px;
+
+
+    align-items:center;
+
+
+}
+
+
+
+
+
+.report-button {
+
+
+    background:#28a745;
+
+
+    font-size:17px;
+
+
+    font-weight:bold;
+
+
+    padding:14px 25px;
+
+
+}
+
+
+
+.report-button:hover {
+
+
+    background:#218838;
+
+
+}
+
+
+
+
+
+/* ==========================
+   FORMULARZE
+========================== */
+
+
+.formularz {
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    repeat(4,1fr);
+
+
+    gap:15px;
+
+
+}
+
+
+
+input,
+select {
+
+
+    width:100%;
+
+
+    padding:12px;
+
+
+    border-radius:7px;
+
+
+    border:
+
+    1px solid #ccc;
+
+
+    font-size:16px;
+
+
+    background:white;
+
+
+}
+
+
+
+
+input:focus,
+select:focus {
+
+
+    outline:none;
+
+
+    border-color:#0078D7;
+
+
+    box-shadow:
+
+    0 0 5px rgba(0,120,215,.3);
+
+
+}
+
+
+
+
+
+button {
+
+
+    background:#0078D7;
+
+
+    color:white;
+
+
+    border:0;
+
+
+    padding:12px 20px;
+
+
+    border-radius:7px;
+
+
+    cursor:pointer;
+
+
+    font-size:15px;
+
+
+}
+
+
+
+button:hover {
+
+
+    background:#005fa3;
+
+
+}
+
+
+
+
+
+/* ==========================
+   TABELA
+========================== */
+
+
+table {
+
+
+    width:100%;
+
+
+    border-collapse:collapse;
+
+
+    overflow:hidden;
+
+
+    border-radius:10px;
+
+
+}
+
+
+
+thead {
+
+
+    background:#0078D7;
+
+
+}
+
+
+
+th {
+
+
+    color:white;
+
+
+    padding:13px;
+
+
+    text-align:left;
+
+
+}
+
+
+
+td {
+
+
+    padding:12px;
+
+
+    border-bottom:
+
+    1px solid #ddd;
+
+
+}
+
+
+
+tbody tr:hover {
+
+
+    background:#f5f9ff;
+
+
+}
+
+
+
+td button {
+
+
+    background:#c62828;
+
+
+    padding:8px 15px;
+
+
+}
+
+
+
+td button:hover {
+
+
+    background:#8e0000;
+
+
+}
+
+
+
+
+
+/* ==========================
+   UKRYWANIE PÓL RAPORTÓW
+========================== */
+
+
+#miesiacRaportu,
+#tydzienRaportu {
+
+
+    min-width:150px;
+
+
+}
+
+
+
+
+
+/* ==========================
+   RESPONSYWNOŚĆ
+========================== */
+
+
+@media(max-width:900px){
+
+
+
+    .report-box .formularz,
+    .formularz {
+
+
+        grid-template-columns:
+
+        1fr;
+
+
+    }
+
+
+
+    body {
+
+
+        padding:15px;
+
+
+    }
+
+
+
+    header h1 {
+
+
+        font-size:24px;
+
+
+    }
+
+
+
+}
