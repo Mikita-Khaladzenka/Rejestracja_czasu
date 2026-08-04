@@ -15,8 +15,6 @@ Backend/*.db-journal
 Backend/*.sqlite
 Backend/*.sqlite3
 
-# Konfiguracja z sekretami
-Backend/config.py
 
 # Logi
 *.log

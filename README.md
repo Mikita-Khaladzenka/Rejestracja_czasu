@@ -52,13 +52,13 @@ Moduły takie jak `sqlite3`, `datetime`, `pathlib`, `subprocess`, `logging`, `os
 Pobierz projekt ręcznie lub sklonuj repozytorium:
 
 ```bash
-git clone https://github.com/Mikita-Khaladzenka/rejestracja_czasu.git
+git clone https://github.com/Mikita-Khaladzenka/Rejestracja_czasu.git
 ```
 
 ## 2. Przejście do katalogu projektu
 
 ```bash
-cd rejestracja_czasu
+cd Rejestracja_czasu
 ```
 
 Nazwa katalogu może być inna, jeżeli projekt został pobrany jako archiwum ZIP lub zapisany pod inną nazwą.
