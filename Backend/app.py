@@ -48,10 +48,6 @@ if __name__ == "__main__":
     app.run(
         host="0.0.0.0",
         port=5000,
-<<<<<<< HEAD
         debug=True,
         use_reloader=False
-=======
-        debug=True
->>>>>>> 35a7e7fb6b192a5b71ce7e4aab5652b9d0980974
     )
