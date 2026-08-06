@@ -124,25 +124,26 @@ header p {
 
 
 .login-box{
-
-
-    width:420px;
-
-
-    background:white;
-
-
-    padding:45px;
-
-
-    border-radius:14px;
-
-
-    box-shadow:
-    0 15px 40px rgba(0,0,0,.18);
-
-
+    
     text-align:center;
+    
+    width: 420px;
+    
+    background: white;
+    
+    padding: 45px;
+    
+    border-radius: 14px;
+    
+    box-shadow: 0 15px 40px rgba(0,0,0,.18);
+    
+    text-align: center;
+
+    display: flex;
+    
+    flex-direction: column;
+    
+    gap: 15px;
 
 
 }
